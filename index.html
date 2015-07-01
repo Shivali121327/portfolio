@@ -2,14 +2,15 @@
 layout: home
 ---
 <div id="home" class="container-fluid">
+  <div id="index">
 	<div class="row one">
 		<div id="background">
 		  <header>
 				<ul>
-					<li>Home</li>
-					<li>Skills</li>
-					<li>Projects</li>
-					<li>Contact</li>
+					<a href="#index"><li>Home</li></a>
+					<a href="#skills"><li>Skills</li></a>
+					<a href="#work"><li>Projects</li></a>
+					<a href="#contact"><li>Contact</li></a>
 				</ul>
 			</header>
 			<h1 class="wow fadeInRight" data-wow-duration="3s" data-wow-delay="0s">Shivali<br>Chansoriya</h1>
@@ -17,7 +18,9 @@ layout: home
 			  <span id="js-rotating">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 			</div>			
 		</div>
-	</div>
+	</div><!--row one-->
+  </div><!--index-->
+  <div id="skills">
 	<div class="row two">
 	  <div id="background" class="col-xs-4">
 	  	<h2 class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="0s">Skills</h2>
@@ -54,8 +57,11 @@ layout: home
 	  		</dd>
 	  	</div>
 	  </div>
-	</div>
-	<div class="row three">
+	</div> <!--row two-->
+	</div> <!--skills--> 
+
+  <div id="work">
+	  <div class="row three">
 		<div id="right" class="col-xs-12">
 			<h2 class="wow zoomIn" data-wow-duration="3s" data-wow-delay="0s">Projects</h2>
 			<div class="project-container">
@@ -91,8 +97,17 @@ layout: home
                 <a href="https://github.com/Shivali121327" target="_blank"><button class="hover_button">Code</button></a>
               </div>
 				  </div>
-				</div>
+				</div><!--col-md-4-->
 			</div><!--project-container-->
 		</div><!--right-->
-	</div><!--row three-->
+	  </div><!--row three-->
+	</div>
+
+	<div id="contact">
+	<div class="row four">
+		<div id="background">
+			<h3>Contact Me...!</h3>
+		</div>
+	</div>
+	</div><!--contact-->
 </div>
