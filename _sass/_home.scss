@@ -56,3 +56,26 @@ li {
 span {
 	color: #DDDDDD;
 }
+
+div.skill.dl-horizontal {
+	position: relative;
+	top: 25vh;
+}
+
+dd {
+	margin: 2em;
+}
+
+div .progress .wow .zoomIn {
+	visibility: visible; 
+	animation-duration: 3s; 
+	-webkit-animation-duration: 3s; 
+	animation-delay: 0s; 
+	-webkit-animation-delay: 0s; 
+	animation-name: zoomIn; 
+	-webkit-animation-name: zoomIn;
+}
+
+.skill .progress .progress-bar-info {
+  background-color: #333333;
+}
