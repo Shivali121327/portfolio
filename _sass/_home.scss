@@ -28,6 +28,16 @@
   font-size: 5em;
 }
 
+#right h2 {
+  color: #333333;
+	margin: auto;
+	position: relative;
+  top: 15vh;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+  margin-left: 7em;
+}
+
 header {
   width: 1400px;
   position: fixed;
@@ -43,7 +53,13 @@ li {
 	font-family: 'Nunito', sans-serif;
 	margin: 0.6em 1em 0 0;
 	cursor: pointer;
+	transition: all 0.5s ease-in;
 }
+
+/*.row li:hover {
+	background-color: #7f8c8d;
+	color: #FFFFFF;
+}*/
 
 .text {
   position: relative;
@@ -78,4 +94,69 @@ div .progress .wow .zoomIn {
 
 .skill .progress .progress-bar-info {
   background-color: #333333;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-container {
+	margin-top: 25vh;
+}
+
+.project {
+  position: relative;
+  height: 180px;
+}
+
+.project_onhover {
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  bottom: 0px;
+  right: 0px;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+  background-color: #333333;
+
+}
+
+.project:hover .project_onhover {
+  visibility: visible;
+  display: block;
+  transform: scale(1);
+  top:0px;
+}
+
+.project:hover img {
+  opacity: 0;
+}
+
+h3 {
+	color: #BDC3C7;
+  margin-left: 4.5em;
+}
+
+hr {
+	color: #bdc3c7;
+	margin: 0 4.5em 0 4em;
+}
+
+button {
+  margin: 1.5em 2.5em 0 4em;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: 2px solid #83888C;
+  background-color: #1E2327;
+  outline: none;
+  color: #83888C;
+  font-weight: 600;
 }
