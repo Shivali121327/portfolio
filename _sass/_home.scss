@@ -1,20 +1,25 @@
 #background {
-	background-color: #333333;
+	background-color: $primary-color;
+	height: 100vh;
+}
+
+#left {
+	background-color: $tertiary-color;
 	height: 100vh;
 }
 
 a{
-	color: #333333;
+	color: black;
 }
 
 #right{
-  background-color: #bdc3c7;
-  color: #333333;
+  background-color: $primary-color;
+  color: $primary-color;
   height: 100vh;	
 }
 
-#background h1 {
-	color: #DDDDDD;
+#left h1 {
+	color: $secondary-color;
 	margin: auto;
 	position: relative;
   top: 35vh;
@@ -23,8 +28,8 @@ a{
   font-size: 5em;
 }
 
-#background h2 {
-	color: #DDDDDD;
+#left h2 {
+	color: $secondary-color;
 	margin: auto;
 	position: relative;
   top: 35vh;
@@ -33,7 +38,7 @@ a{
 }
 
 #right h2 {
-  color: #333333;
+  color: $tertiary-color;
 	margin: auto;
 	position: relative;
   top: 15vh;
@@ -42,13 +47,36 @@ a{
   margin-left: 7em;
 }
 
+h4 {
+	color: #BDC3C7;
+  margin: 1em 0 1em 7em;
+}
+
+#right h3 {
+	color: $tertiary-color;
+	margin: auto;
+	position: relative;
+  top: 35vh;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+}
+
+#right p {
+	color: $tertiary-color;
+	margin: auto;
+	position: relative;
+  top: 27vh;
+  text-align: left;
+  font-size: 1.9em;
+}
+
 header {
   width: 1400px;
   position: fixed;
   z-index: 1000;
   height: 12vh;
-	color: #333333;
-	background-color: #fff;
+	color: #1E2327;
+	background-color: $secondary-color;
 }
 li {
 	list-style: none;
@@ -73,7 +101,7 @@ li {
 }
 
 span {
-	color: #DDDDDD;
+	color: $secondary-color;
 }
 
 div.skill.dl-horizontal {
@@ -83,6 +111,10 @@ div.skill.dl-horizontal {
 
 dd {
 	margin: 2em;
+}
+
+dt {
+	color: black;
 }
 
 div .progress .wow .zoomIn {
@@ -96,7 +128,7 @@ div .progress .wow .zoomIn {
 }
 
 .skill .progress .progress-bar-info {
-  background-color: #333333;
+  background-color: $tertiary-color;
 }
 
 img {
@@ -128,7 +160,7 @@ img {
   right: 0px;
   transform: scale(0);
   transition: all 0.5s ease-in-out;
-  background-color: #333333;
+  background-color: $tertiary-color;
 
 }
 
@@ -141,11 +173,6 @@ img {
 
 .project:hover img {
   opacity: 0;
-}
-
-h3 {
-	color: #BDC3C7;
-  margin-left: 4.5em;
 }
 
 hr {
@@ -164,12 +191,29 @@ button {
   font-weight: 700;
 }
 
-#background h3 {
-	color: #DDDDDD;
+#left h3 {
+	color: $secondary-color;
 	margin: auto;
 	position: relative;
   top: 20vh;
   padding-left: 6em;
   font-family: 'Pacifico', cursive;
   font-size: 5em;
+}
+
+form#main-form {
+	position: relative;
+  top: 30vh;
+  margin-left: 25em;
+}
+
+button#submit-button {
+	margin: 1.5em 2.5em 0 0;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: 2px solid #BDC3C7;
+  background-color: #BDC3C7 ;
+  outline: none;
+  color: #1E2327;
+  font-weight: 700;
 }

@@ -4,7 +4,7 @@ layout: home
 <div id="home" class="container-fluid">
   <div id="index">
 	<div class="row one">
-		<div id="background">
+		<div id="left">
 		  <header>
 				<ul>
 					<a href="#index"><li>Home</li></a>
@@ -20,10 +20,20 @@ layout: home
 		</div>
 	</div><!--row one-->
   </div><!--index-->
+
+  <div id="about">
+  	<div class="row middle">
+  		<div id="right" class="col-md-12">
+  			<h2>About Me</h2>
+  			<p>Hi..I am Shivali, a Web Designer.<br>Every design I develop is built to be search engine friendly,using the latest development principles and techniques.To find out more what I can do for you, check out my work below, or contact me..!</p>
+  		</div>
+  	</div>
+  </div>
+
   <div id="skills">
 	<div class="row two">
-	  <div id="background" class="col-xs-4">
-	  	<h2 class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="0s">Skills</h2>
+	  <div id="right" class="col-xs-4">
+	  	<h3 class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="0s">Skills</h3>
 	  </div>
 	  <div id="right" class="col-xs-8">
 	  	<div class="skill dl-horizontal">
@@ -69,7 +79,7 @@ layout: home
 				<div class="project">
 				<img src ="Images/psd.png"></img> 
               <div class ="project_onhover">
-                <h3>PSD To HTML</h3>
+                <h4>PSD To HTML</h4>
                 <hr>
                 <a href="https://preview.c9.io/shivali121327/psd/index.html?_c9_id=livepreview11&_c9_host=https://ide.c9.io" target="_blank"><button class="hover_button">Visit</button></a>
                 <a href="https://github.com/Shivali121327/psd" target="_blank"><button class="hover_button">Code</button></a>
@@ -80,7 +90,7 @@ layout: home
 				  <div class="project">
 					  <img src ="Images/one.jpg"></img> 
               <div class ="project_onhover">
-                <h3>Nothing</h3>
+                <h4>Nothing</h4>
                 <hr>
                 <a href="" target="_blank"><button class="hover_button">Visit</button></a>
                 <a href="https://github.com/Shivali121327" target="_blank"><button class="hover_button">Code</button></a>
@@ -91,7 +101,7 @@ layout: home
 				  <div class="project">
 					  <img src ="Images/two.jpg"></img> 
               <div class ="project_onhover">
-                <h3>Nothing</h3>
+                <h4>Nothing</h4>
                 <hr>
                 <a href="" target="_blank"><button class="hover_button">Visit</button></a>
                 <a href="https://github.com/Shivali121327" target="_blank"><button class="hover_button">Code</button></a>
@@ -105,9 +115,18 @@ layout: home
 
 	<div id="contact">
 	<div class="row four">
-		<div id="background">
+		<div id="left">
 			<h3>Contact Me...!</h3>
-		</div>
-	</div>
+		    <div class="form-group col-md-8 col-sm-8">
+          <form action="" method="post" id="main-form" name="main-form">
+            <input class="form-control layout" name="name" id="name" placeholder="Name (Required)" type="text" required><br>
+            <input class="form-control layout" name="email" id="email"  placeholder="Email (Required)" type="text" required><br>
+            <input class="form-control layout" name="subject" id="subject" placeholder="Subject" type="text" required><br>
+            <textarea class="form-control layout " placeholder="Message" name="decribe" id="decribe" required></textarea><br>
+            <button id="submit-button">Send Message</button>
+          </form>
+        </div>
+		</div><!--left-->
+	</div><!--row four-->
 	</div><!--contact-->
 </div>
