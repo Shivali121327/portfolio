@@ -3,75 +3,35 @@ body {
 	overflow-x: hidden; 
 }
 
-.morphext > .animated {
-    display: inline-block;
-}
-
 #left {
 	background-color: $special-bg;
 	height: 100vh;
-}
-
-a{
-	color: $lighter-font-color;
-}
-
-#right{
-  background-color: $body-bg;
-  height: 100vh;	
-}
-
-#left h1 {
-	color: $lighter-font-color;
-	margin: auto;
-	position: relative;
-  top: 35vh;
-  padding-left: 12em;
-  font-family: $cursive-font;
-  font-size: 5em;
-}
-
-#left h2 {
-	color: $lighter-font-color;
-	margin: auto;
-	position: relative;
-  top: 35vh;
-  font-family: $cursive-font;
-  font-size: 5em;
-}
-
-#right h2 {
-  color: $lighter-font-color;
-	margin: auto;
-	position: relative;
-  top: 15vh;
-  font-family: $cursive-font;
-  font-size: 5em;
-  margin-left: 7em;
-}
-
-h4 {
-	color: $lighter-font-color;
-  margin: 1em 0 1em 7em;
-}
-
-#right h3 {
-	color: $lighter-font-color;
-	margin: auto;
-	position: relative;
-  top: 35vh;
-  font-family: $cursive-font;
-  font-size: 5em;
-}
-
-#right p {
-	color: $lighter-font-color;
-	margin: auto;
-	position: relative;
-  top: 27vh;
-  text-align: left;
-  font-size: 1.9em;
-  font-family: $funky-font;
+	h1 {
+		color: $lighter-font-color;
+		margin: auto;
+		position: relative;
+	  top: 35vh;
+	  padding-left: 12em;
+	  font-family: $cursive-font;
+	  font-size: 5em;
+	}
+	h2 {
+		color: $lighter-font-color;
+		margin: auto;
+		position: relative;
+	  top: 35vh;
+	  font-family: $cursive-font;
+	  font-size: 5em;
+	}
+	h3 {
+		color: $lighter-font-color;
+		margin: auto;
+		position: relative;
+	  top: 20vh;
+	  padding-left: 6em;
+	  font-family: $cursive-font;
+	  font-size: 5em;
+	}
 }
 
 header {
@@ -80,15 +40,18 @@ header {
   z-index: 1000;
   height: 5em;
 	background-color: $header-bg;
-}
-li {
-	list-style: none;
-	display: inline-block;
-	font-size: 2em;
-	font-family: $sans-font;
-	margin: 0.6em 2em 0 0;
-	cursor: pointer;
-	transition: all 0.5s ease-in;
+	li {
+		list-style: none;
+		display: inline-block;
+		font-size: 2em;
+		font-family: $sans-font;
+		margin: 0.6em 2em 0 0;
+		cursor: pointer;
+		transition: all 0.5s ease-in;
+  }
+  a {
+	  color: $lighter-font-color;
+  }
 }
 
 .row a:hover {
@@ -96,18 +59,41 @@ li {
 	text-decoration: none;
 }
 
-.text {
-  position: relative;
-  top: 20vh;
-  margin: 0 4em;
-	max-width:50%;
-	font-size: 1.5em;
-}
-
 span {
 	color: $lighter-font-color;
 	font-family: $cursive-font;
 	font-size: 1.4em;
+}
+
+#right{
+  background-color: $body-bg;
+  height: 100vh;
+  h2 {
+	  color: $lighter-font-color;
+		margin: auto;
+		position: relative;
+	  top: 15vh;
+	  font-family: $cursive-font;
+	  font-size: 5em;
+	  margin-left: 7em;
+  }	
+  p {
+		color: $lighter-font-color;
+		margin: auto;
+		position: relative;
+	  top: 27vh;
+	  text-align: left;
+	  font-size: 1.9em;
+	  font-family: $funky-font;
+	}
+	h3 {
+		color: $lighter-font-color;
+		margin: auto;
+		position: relative;
+	  top: 35vh;
+	  font-family: $cursive-font;
+	  font-size: 5em;
+	}
 }
 
 div.skill.dl-horizontal {
@@ -137,6 +123,32 @@ div .progress .wow .zoomIn {
   background-color: $special-bg;
 }
 
+.project-container {
+	margin-top: 25vh;
+	.project {
+	  position: relative;
+	  height: 180px;
+	  .project_onhover {
+		  visibility: hidden;
+		  position: absolute;
+		  top: 0px;
+		  left:0px;
+		  bottom: 0px;
+		  right: 0px;
+		  transform: scale(0);
+		  transition: all 0.5s ease-in-out;
+		  background-color: $special-bg;
+		}
+	}
+}
+
+.project:hover .project_onhover {
+  visibility: visible;
+  display: block;
+  transform: scale(1);
+  top:0px;
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -148,37 +160,13 @@ img {
   transition: all 0.5s ease-in-out;
 }
 
-.project-container {
-	margin-top: 25vh;
-}
-
-.project {
-  position: relative;
-  height: 180px;
-}
-
-.project_onhover {
-  visibility: hidden;
-  position: absolute;
-  top: 0px;
-  left:0px;
-  bottom: 0px;
-  right: 0px;
-  transform: scale(0);
-  transition: all 0.5s ease-in-out;
-  background-color: $special-bg;
-
-}
-
-.project:hover .project_onhover {
-  visibility: visible;
-  display: block;
-  transform: scale(1);
-  top:0px;
-}
-
 .project:hover img {
   opacity: 0;
+}
+
+h4 {
+	color: $lighter-font-color;
+	margin: 1em 0 1em 7em;
 }
 
 hr {
@@ -197,14 +185,12 @@ button {
   font-weight: 700;
 }
 
-#left h3 {
-	color: $lighter-font-color;
-	margin: auto;
-	position: relative;
+.text {
+  position: relative;
   top: 20vh;
-  padding-left: 6em;
-  font-family: $cursive-font;
-  font-size: 5em;
+  margin: 0 4em;
+	max-width:50%;
+	font-size: 1.5em;
 }
 
 form#main-form {
@@ -233,4 +219,8 @@ button#submit-button:hover {
   outline: none;
   color: $lighter-font-color;
   font-weight: 700;
+}
+
+.morphext > .animated {
+    display: inline-block;
 }
