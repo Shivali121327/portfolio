@@ -1,13 +1,13 @@
 $(document).ready(function() {
   $('#demo').Morphext({
 	  // animation settings.
-	  animation: "fadeIn",
+	  animation: "zoomIn",
 	  // custom separator
 	  separator: ",",
 	  // animation speed
-	  speed: 3000,
+	  speed: 4000,
 	  // callback
 	  complete: $.noop
 	});
-  new WOW().init();
 });
+new WOW().init();
