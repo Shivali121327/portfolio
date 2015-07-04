@@ -1,9 +1,10 @@
 body {
 	max-width: 100%;
 	overflow-x: hidden; 
+  position: relative;
 }
 
-#left {
+.left {
 	background-color: $special-bg;
 	height: 100vh;
 	h1 {
@@ -35,8 +36,10 @@ body {
 }
 
 header {
-  width: 1400px;
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: 1000;
   height: 5em;
 	background-color: $header-bg;
@@ -45,7 +48,7 @@ header {
 		display: inline-block;
 		font-size: 2em;
 		font-family: $sans-font;
-		margin: 0.6em 2em 0 0;
+		margin: 0.6em 0 0 2em;
 		cursor: pointer;
 		transition: all 0.5s ease-in;
   }
@@ -65,14 +68,14 @@ span {
 	font-size: 1.4em;
 }
 
-#right{
+.right{
   background-color: $body-bg;
   height: 100vh;
   h2 {
 	  color: $lighter-font-color;
 		margin: auto;
 		position: relative;
-	  top: 15vh;
+	  top: 18vh;
 	  font-family: $cursive-font;
 	  font-size: 5em;
 	  margin-left: 7em;
@@ -94,6 +97,18 @@ span {
 	  font-family: $cursive-font;
 	  font-size: 5em;
 	}
+}
+
+.logo {
+  height: 100vh;
+  img {
+    position: relative;
+    max-width: 4em;
+    max-height: 4em;
+    display: block;
+    top: 13em;
+    margin: 0 0 1em 8em;
+  }
 }
 
 div.skill.dl-horizontal {
@@ -127,7 +142,8 @@ div .progress .wow .zoomIn {
 	margin-top: 25vh;
 	.project {
 	  position: relative;
-	  height: 180px;
+    width: 300px;
+	  height: 250px;
 	  .project_onhover {
 		  visibility: hidden;
 		  position: absolute;
@@ -166,16 +182,16 @@ img {
 
 h4 {
 	color: $lighter-font-color;
-	margin: 1em 0 1em 7em;
+	margin: 1em 0 1em 5em;
 }
 
 hr {
-	border: 1px solid $header-bg;
+	border: 1px solid $lighter-font-color;
 	margin: 0 4.5em 0 4em;
 }
 
 button {
-  margin: 1.5em 2.5em 0 4em;
+  margin: 1.5em 2em 1em 7.5em;
   padding: 10px 25px;
   border-radius: 3px;
   border: 2px solid $lighter-font-color;
@@ -203,10 +219,10 @@ button#submit-button {
 	margin: 1.5em 2.5em 0 0;
   padding: 10px 25px;
   border-radius: 3px;
-  border: 2px solid $header-bg;
-  background-color: $lighter-font-color;
+  border: 2px solid $lighter-font-color;
+  background-color: $special-bg;
   outline: none;
-  color: $special-bg;
+  color: $lighter-font-color;
   font-weight: 700;
 }
 
@@ -214,8 +230,8 @@ button#submit-button:hover {
 	margin: 1.5em 2.5em 0 0;
   padding: 10px 25px;
   border-radius: 3px;
-	border: 2px solid $header-bg;
-  background-color: $special-bg;
+	border: 2px solid $lighter-font-color;
+  background-color: rgba(255, 255, 255, 0.2);
   outline: none;
   color: $lighter-font-color;
   font-weight: 700;
